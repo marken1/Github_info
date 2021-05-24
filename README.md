@@ -1,5 +1,5 @@
 # github_info
-*Get basic github ifno python module*
+*Get basic github info python module*
 
 Download 'github.py' file and add it to your project.
 Then type 'import github_info'
