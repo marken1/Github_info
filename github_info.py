@@ -4,7 +4,6 @@ import re
 
 
 def cont(url):
-    url_profile = 'https://github.com/marken1'
     profile = requests.get(url_profile)
     soup = BeautifulSoup(profile.content, 'html.parser')
     find_el = soup.find('h2', class_='f4 text-normal mb-2')
@@ -13,7 +12,6 @@ def cont(url):
 
 
 def repo(url):
-    url_profile = 'https://github.com/marken1'
     profile = requests.get(url_profile)
     soup = BeautifulSoup(profile.content, 'html.parser')
     rep = soup.find('span', class_='Counter')
