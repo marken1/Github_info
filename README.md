@@ -1,4 +1,4 @@
-# github_info
+# Github_info
 *Get basic github info python module*
 
 Download 'github_info.py' file and add it to your project.<br/>
