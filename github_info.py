@@ -7,8 +7,12 @@ def cont(url):
     profile = requests.get(url)
     soup = BeautifulSoup(profile.content, 'html.parser')
     find_el = soup.find('h2', class_='f4 text-normal mb-2')
-    con = re.findall(r'\d+', str(find_el.text))
+    delete_string = re.findall(r'\d+', str(find_el.text))
+    strings = [str(integer) for integer in delete_string]
+    a_string = "".join(strings)
+    con = int(a_string)
     return con
+
 
 
 def repo(url):
